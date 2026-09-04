@@ -1,0 +1,11 @@
+name: macos-brew-1
+on:
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: macos-latest
+    steps:
+      - run: brew install cyan ipapatch dpkg
+      - run: cyan --help
+      - run: ipapatch --help
+      - run: dpkg --help
