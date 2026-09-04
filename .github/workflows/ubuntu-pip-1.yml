@@ -1,4 +1,4 @@
-name: ubuntu-uv-1
+name: ubuntu-pip-1
 on:
   workflow_dispatch:
 jobs:
