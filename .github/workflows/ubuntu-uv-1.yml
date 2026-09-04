@@ -9,5 +9,5 @@ jobs:
         with:
           python-version: "3.14"
       - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
-      - run: uvx --from https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
+      - run: uv tool install https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
       - run: cyan --help
