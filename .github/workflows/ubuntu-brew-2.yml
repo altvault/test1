@@ -1,0 +1,13 @@
+name: ubuntu-brew-2
+on:
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+      - run: brew install cyan
+      - run: brew install ipapatch
+      - run: cyan --help
+      - run: ipapatch --help
+      - run: dpkg --help
